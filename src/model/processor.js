@@ -50,8 +50,7 @@ class Processor {
                     try {
                         boardClone[y][x] = test.moves[j];
                         if (checks.checkBoard(boardClone, true)){
-                            let whatIs = this.beginSolve(boardClone);
-                            return whatIs;
+                            return this.beginSolve(boardClone);
                         }
                         else{
                             boardClone[y][x] = 0;
